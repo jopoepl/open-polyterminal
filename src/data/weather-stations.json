@@ -1,0 +1,130 @@
+[
+  {
+    "city": "Buenos Aires",
+    "icaoCode": "SAEZ",
+    "geocode": { "lat": -34.82, "lon": -58.54 },
+    "tz": "America/Argentina/Buenos_Aires",
+    "aliases": ["buenos aires"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Atlanta",
+    "icaoCode": "KATL",
+    "geocode": { "lat": 33.64, "lon": -84.43 },
+    "tz": "America/New_York",
+    "aliases": ["atlanta"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Chicago",
+    "icaoCode": "KORD",
+    "geocode": { "lat": 41.98, "lon": -87.9 },
+    "tz": "America/Chicago",
+    "aliases": ["chicago"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Toronto",
+    "icaoCode": "CYYZ",
+    "geocode": { "lat": 43.68, "lon": -79.63 },
+    "tz": "America/Toronto",
+    "aliases": ["toronto"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "London",
+    "icaoCode": "EGLC",
+    "geocode": { "lat": 51.5, "lon": 0.05 },
+    "tz": "Europe/London",
+    "aliases": ["london"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Seoul",
+    "icaoCode": "RKSI",
+    "geocode": { "lat": 37.49, "lon": 126.49 },
+    "tz": "Asia/Seoul",
+    "aliases": ["seoul"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Tokyo",
+    "icaoCode": "RJTT",
+    "geocode": { "lat": 35.55, "lon": 139.78 },
+    "tz": "Asia/Tokyo",
+    "aliases": ["tokyo"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Paris",
+    "icaoCode": "LFPG",
+    "geocode": { "lat": 49.01, "lon": 2.55 },
+    "tz": "Europe/Paris",
+    "aliases": ["paris"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Sydney",
+    "icaoCode": "YSSY",
+    "geocode": { "lat": -33.95, "lon": 151.18 },
+    "tz": "Australia/Sydney",
+    "aliases": ["sydney"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Ankara",
+    "icaoCode": "LTAC",
+    "geocode": { "lat": 40.12, "lon": 32.99 },
+    "tz": "Europe/Istanbul",
+    "aliases": ["ankara"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Wellington",
+    "icaoCode": "NZWN",
+    "geocode": { "lat": -41.33, "lon": 174.81 },
+    "tz": "Pacific/Auckland",
+    "aliases": ["wellington"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Dallas",
+    "icaoCode": "KDAL",
+    "geocode": { "lat": 32.8471, "lon": -96.8517 },
+    "tz": "America/Chicago",
+    "aliases": ["dallas"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Seattle",
+    "icaoCode": "KSEA",
+    "geocode": { "lat": 47.45, "lon": -122.31 },
+    "tz": "America/Los_Angeles",
+    "aliases": ["seattle"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Los Angeles",
+    "icaoCode": "KLAX",
+    "geocode": { "lat": 33.94, "lon": -118.41 },
+    "tz": "America/Los_Angeles",
+    "aliases": ["los angeles", "la"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "Miami",
+    "icaoCode": "KMIA",
+    "geocode": { "lat": 25.79, "lon": -80.29 },
+    "tz": "America/New_York",
+    "aliases": ["miami"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  },
+  {
+    "city": "New York",
+    "icaoCode": "KLGA",
+    "geocode": { "lat": 40.761, "lon": -73.864 },
+    "tz": "America/New_York",
+    "aliases": ["new york", "new york city", "nyc"],
+    "resolutionSource": "polybuddy-signal-backtester/src/data/model-accuracy-daily.json"
+  }
+]

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Polymarket API Router"
+  short_description: "Map analysis questions to the correct Polymarket endpoints."
+  default_prompt: "Use the Polymarket API reference to pick endpoints and return exact request plans."

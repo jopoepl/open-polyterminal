@@ -1,0 +1,32 @@
+{
+  "name": "poly-terminal",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "secret:scan": "bash scripts/secret-scan.sh --files",
+    "secret:scan:staged": "bash scripts/secret-scan.sh --staged",
+    "secret:scan:history": "bash scripts/secret-scan.sh --history",
+    "hooks:install": "bash scripts/install-git-hooks.sh",
+    "mcp:weather": "node scripts/weather-mcp-server.mjs",
+    "mcp:weather:http": "node scripts/weather-mcp-http.mjs",
+    "mcp:polymarket": "node scripts/polymarket-mcp-server.mjs",
+    "mcp:polymarket:http": "node scripts/polymarket-mcp-http.mjs",
+    "mcp:news": "node scripts/news-mcp-server.mjs",
+    "mcp:news:http": "node scripts/news-mcp-http.mjs"
+  },
+  "dependencies": {
+    "lightweight-charts": "^4.2.0",
+    "next": "^14.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "@types/react": "^18.2.48",
+    "@types/react-dom": "^18.2.18",
+    "typescript": "^5.3.3"
+  }
+}

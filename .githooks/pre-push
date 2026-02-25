@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+ROOT_DIR="$(git rev-parse --show-toplevel)"
+SCANNER="$ROOT_DIR/scripts/secret-scan.sh"
+
+"$SCANNER" --files
+
+outgoing_revs=""
+
+while read -r local_ref local_sha remote_ref remote_sha; do
+  [ -z "${local_sha:-}" ] && continue
+
+  if [ "$local_sha" = "0000000000000000000000000000000000000000" ]; then
+    continue
+  fi
+
+  if [ "$remote_sha" = "0000000000000000000000000000000000000000" ]; then
+    range_revs="$(git rev-list "$local_sha")"
+  else
+    range_revs="$(git rev-list "${remote_sha}..${local_sha}")"
+  fi
+
+  if [ -n "$range_revs" ]; then
+    outgoing_revs="${outgoing_revs}${range_revs}"$'\n'
+  fi
+done
+
+if [ -n "$outgoing_revs" ]; then
+  unique_revs="$(printf '%s' "$outgoing_revs" | sed '/^$/d' | sort -u)"
+  if [ -n "$unique_revs" ]; then
+    # shellcheck disable=SC2086
+    "$SCANNER" --commits $unique_revs
+  fi
+fi
