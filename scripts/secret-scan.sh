@@ -136,8 +136,12 @@ case "$mode" in
   --files)
     tracked_files="$(git ls-files)"
     if [ -n "$tracked_files" ]; then
-      # shellcheck disable=SC2206
-      files=($tracked_files)
+      files=()
+      while IFS= read -r file; do
+        [ -n "$file" ] || continue
+        [ -e "$file" ] || continue
+        files+=("$file")
+      done <<< "$tracked_files"
       run_rg_scan "tracked files" "${files[@]}"
     else
       echo "secret-scan: no tracked files to scan."
