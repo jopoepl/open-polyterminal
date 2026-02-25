@@ -46,11 +46,6 @@ npm run secret:scan:history  # full git history
 - Polymarket MCP: `scripts/polymarket-mcp-server.mjs` and `scripts/polymarket-mcp-http.mjs`
 - News MCP: `scripts/news-mcp-server.mjs` and `scripts/news-mcp-http.mjs`
 - Multi-MCP wiring for AI providers lives in `src/lib/ai.ts`
-- Setup docs:
-  - `docs/multi-mcp-setup.md`
-  - `docs/weather-mcp-tools.md`
-  - `docs/polymarket-mcp-tools.md`
-  - `docs/news-mcp-tools.md`
 
 ## Configuration
 No required environment variables for v0.1.
@@ -71,7 +66,7 @@ poly-terminal/
     hooks/
     styles/
   scripts/
-  docs/
+  skills/
 ```
 
 ## Notes
